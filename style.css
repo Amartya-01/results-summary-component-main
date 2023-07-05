@@ -1,0 +1,138 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: "Hanken Grotesk", sans-serif ;
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    align-items: center ;
+    justify-content: center;
+    background-color: var(--Pale-blue);
+}
+
+.card-container{
+    box-shadow: 13px 5px 22px -11px rgba(0,0,0,0.78);
+    border-radius: 20px;
+    width: 650px;
+    background-color: var(--White);
+}
+
+.card{
+    display:flex;
+    justify-content: space-between;
+}
+
+.Result{
+    width: 50%;
+    background-image: linear-gradient(to bottom,#7857ff, #2e2be9);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Result h3{
+    color:#ffffff;
+    font-weight: 200;
+}
+
+.Result .circle{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to bottom,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+}
+.Result .circle h1{
+    font-size: 2.5rem;
+}
+.Result .circle p{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.Result h2{
+    color: #ffffff;
+    margin-top:  10px;
+}
+
+.Result p{
+    color: var(--Light-lavender);
+    width: 207px;
+}
+
+.Summary{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;    
+    gap: 1rem;
+}
+
+
+.Summary .rows{
+    display: flex-column;
+    gap: 0.8rem;
+}
+
+.row{
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.button{
+    color:white;
+    background-color: #303b5a;
+    border-radius: 30px;
+    height: 2.9rem;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom,#7857ff, #2e2be9);
+    cursor: pointer;
+    border: none;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width:675px) {
+    body{
+        align-items: flex-start;
+    }
+    .card-container{
+        box-shadow: none;
+    }
+    .card{
+        flex-direction: column;
+    }        
+    .Result{
+        border-radius: 0 0 1rem 1rem ;
+        width:100%;
+        height: 75vh;
+    }
+
+    .Result p{
+        width: 200px;
+    }
+
+    .Summary{
+        width: 100%;
+    }
+} 
